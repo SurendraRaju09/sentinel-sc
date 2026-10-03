@@ -41,9 +41,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from schemas.events import DisruptionEvent, EventType, SignalSource, SignalStatus
 from integrations.serp_client import fetch_disruption_news
+from dotenv import load_dotenv
 
 logger = logging.getLogger("SignalAgent")
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
 DB_PATH = BASE_DIR / "erp" / "mock_erp.db"
 SIGNAL_OUTPUT_FILE = BASE_DIR / "agents" / "signal_output.json"
 
@@ -140,17 +142,13 @@ def heuristic_extract(text: str) -> Dict[str, Any]:
 
 def llm_extract(title: str, snippet: str) -> Optional[Dict[str, Any]]:
     """
-    Extracts structured disruption metadata using OpenAI if API key is set.
-    Falls back gracefully if unavailable.
+    Extracts structured disruption metadata using Gemini (gemini-3.8-flash) or OpenAI.
+    Falls back gracefully to deterministic heuristic if unavailable.
     """
+    gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
     openai_key = os.getenv("OPENAI_API_KEY", "").strip()
-    if not openai_key:
-        return None
 
-    try:
-        from openai import OpenAI
-        client = OpenAI(api_key=openai_key)
-        prompt = f"""
+    prompt = f"""
 You are an expert supply chain disruption parser.
 Analyze this news item:
 Title: {title}
@@ -164,24 +162,47 @@ Extract the disruption details into JSON format:
   "estimated_delay_days": integer (estimated delay in days, default 7 if unspecified),
   "confidence": float between 0.0 and 1.0
 }}
-Return valid JSON only.
+Return valid JSON only. Do not wrap in markdown tags like ```json.
 """
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": "You are a supply chain risk intelligence parser. Output valid JSON only."},
-                {"role": "user", "content": prompt}
-            ],
-            response_format={"type": "json_object"},
-            temperature=0.0
-        )
-        content = response.choices[0].message.content
-        data = json.loads(content)
-        data["event_type"] = EventType(data["event_type"])
-        return data
-    except Exception as e:
-        logger.warning(f"LLM extraction skipped or failed: {e}. Falling back to deterministic heuristic.")
-        return None
+
+    if gemini_key:
+        try:
+            from google import genai
+            client = genai.Client(api_key=gemini_key)
+            resp = client.models.generate_content(
+                model="gemini-3.8-flash",
+                contents=prompt
+            )
+            raw_text = resp.text.strip()
+            if raw_text.startswith("```"):
+                raw_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text, flags=re.MULTILINE).strip()
+            data = json.loads(raw_text)
+            data["event_type"] = EventType(data["event_type"])
+            return data
+        except Exception as e:
+            logger.warning(f"Gemini extraction skipped or failed: {e}. Trying OpenAI or heuristic.")
+
+    if openai_key:
+        try:
+            from openai import OpenAI
+            client = OpenAI(api_key=openai_key)
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "You are a supply chain risk intelligence parser. Output valid JSON only."},
+                    {"role": "user", "content": prompt}
+                ],
+                response_format={"type": "json_object"},
+                temperature=0.0
+            )
+            content = response.choices[0].message.content
+            data = json.loads(content)
+            data["event_type"] = EventType(data["event_type"])
+            return data
+        except Exception as e:
+            logger.warning(f"OpenAI extraction skipped or failed: {e}.")
+
+    return None
 
 
 # ─────────────────────────────────────────────────────────────────

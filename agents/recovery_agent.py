@@ -52,6 +52,7 @@ def generate_audit_narrative(plan: RecoveryPlan, impact: ImpactAssessment) -> st
     Generates a natural-language executive audit summary of the recovery trade-offs.
     Uses LLM if OPENAI_API_KEY is available; falls back to an exact deterministic narrative.
     """
+    gemini_key = os.getenv("GEMINI_API_KEY", "").strip()
     openai_key = os.getenv("OPENAI_API_KEY", "").strip()
 
     fallback_narrative = (
@@ -66,13 +67,7 @@ def generate_audit_narrative(plan: RecoveryPlan, impact: ImpactAssessment) -> st
         f"Net financial benefit: ${impact.total_otif_exposure - plan.candidates[0].total_cost:,.0f}."
     )
 
-    if not openai_key:
-        return fallback_narrative
-
-    try:
-        from openai import OpenAI
-        client = OpenAI(api_key=openai_key)
-        prompt = f"""
+    prompt = f"""
 Summarize this supply chain recovery evaluation for executive review in 3-4 professional sentences:
 - Material: {impact.shortage.material_name}
 - Shortage: {impact.shortage.shortage_days} days (TTS={impact.shortage.tts_days}d, TTR={impact.shortage.ttr_days}d)
@@ -83,18 +78,36 @@ Summarize this supply chain recovery evaluation for executive review in 3-4 prof
 
 Do not invent any additional numbers. Report strictly what is provided above.
 """
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": "You are a supply chain operations analyst. Be concise, precise, and objective."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.0
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        logger.warning(f"LLM audit narration fallback: {e}")
-        return fallback_narrative
+
+    if gemini_key:
+        try:
+            from google import genai
+            client = genai.Client(api_key=gemini_key)
+            resp = client.models.generate_content(
+                model="gemini-3.8-flash",
+                contents=prompt
+            )
+            return resp.text.strip()
+        except Exception as e:
+            logger.warning(f"Gemini audit narration fallback: {e}")
+
+    if openai_key:
+        try:
+            from openai import OpenAI
+            client = OpenAI(api_key=openai_key)
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "You are a supply chain operations analyst. Be concise, precise, and objective."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.0
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            logger.warning(f"OpenAI audit narration fallback: {e}")
+
+    return fallback_narrative
 
 
 class RecoveryAgent:

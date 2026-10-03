@@ -17,10 +17,12 @@ import os
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 import requests
+from dotenv import load_dotenv
 
 logger = logging.getLogger("SerpClient")
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
 CACHE_FILE = BASE_DIR / "integrations" / "cache" / "serp_cache.json"
 
 DEFAULT_SEARCH_QUERY = os.getenv(
