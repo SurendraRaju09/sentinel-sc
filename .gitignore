@@ -3,4 +3,4 @@ __pycache__/
 *.pyo
 *.pyd
 .env
-erp/graph_state.db
+erp/graph_state.db*
