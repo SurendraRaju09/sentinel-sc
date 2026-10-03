@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T12:00:44.164412",
+  "generated_at": "2026-10-03T12:34:08.132612",
   "reference_date": "2026-10-03",
   "dod_all_passed": true,
   "test_results": [
@@ -49,7 +49,7 @@
       "test_id": 7,
       "name": "Synthetic A->B->C->A BOM cycle terminates",
       "passed": true,
-      "detail": "Cycle A->B->C->A terminated. Ancestors={'B', 'C', 'A'}"
+      "detail": "Cycle A->B->C->A terminated. Ancestors={'C', 'B', 'A'}"
     },
     {
       "test_id": 8,

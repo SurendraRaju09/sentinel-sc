@@ -1,0 +1,745 @@
+{
+  "search_metadata": {
+    "id": "6ac0984c6b036f45cd8ce233",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/9xlfia9j_6r-2awghLFTM-ZM1FONrr7TtAXhPHmfh6o/6ac0984c6b036f45cd8ce233.json",
+    "markdown_endpoint": "https://serpapi.com/searches/9xlfia9j_6r-2awghLFTM-ZM1FONrr7TtAXhPHmfh6o/6ac0984c6b036f45cd8ce233.md",
+    "created_at": "2026-10-03 05:53:16 UTC",
+    "processed_at": "2026-10-03 05:53:16 UTC",
+    "google_news_url": "https://news.google.com/search?q=Port+Klang+port+disruption+OR+delay+OR+strike+OR+weather&hl=en&gl=US",
+    "raw_html_file": "https://serpapi.com/searches/9xlfia9j_6r-2awghLFTM-ZM1FONrr7TtAXhPHmfh6o/6ac0984c6b036f45cd8ce233.html",
+    "total_time_taken": 0.45
+  },
+  "search_parameters": {
+    "engine": "google_news",
+    "gl": "us",
+    "hl": "en",
+    "q": "Port Klang port disruption OR delay OR strike OR weather"
+  },
+  "news_results": [
+    {
+      "position": 1,
+      "title": "Port operational updates from around the world (2 - 8 Sep 2026)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-08-09-2026",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/dba0592d-8450-43dd-91f0-0cfafa8bf4d2.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "09/08/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-09-08T07:00:00Z"
+    },
+    {
+      "position": 2,
+      "title": "Weather events delay Asian ocean freight, but port operations are recovering",
+      "source": {
+        "name": "Logistics Manager",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.logisticsmanager.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Reuben Henry-fellows"
+        ]
+      },
+      "link": "https://www.logisticsmanager.com/weather-events-delay-asian-ocean-freight-but-port-operations-are-recovering/",
+      "thumbnail": "https://www.logisticsmanager.com/wp-content/uploads/2026/09/shutterstock_1219967209-1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNWhNRFZCT0hwaWN6QjZSRkJaVFJDZkF4amtCU2dLTWdNaHdBSQ",
+      "date": "09/23/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-09-23T07:00:00Z"
+    },
+    {
+      "position": 3,
+      "title": "Asia port congestion worsens amid bad weather, vessel bunching",
+      "source": {
+        "name": "Journal of Commerce",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.joc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.joc.com/article/asia-port-congestion-worsens-amid-bad-weather-vessel-bunching-6247280",
+      "thumbnail": "https://www.joc.com/images/phoenix/6246879_0.1.jpg?format=jpeg&w=3840",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVNTRzVDZVRoWVNqUnhRMm95VFJERUF4aW1CU2dLTWdNQllBQQ",
+      "date": "07/02/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-02T07:00:00Z"
+    },
+    {
+      "position": 4,
+      "title": "Weather Forecast and Conditions for Port Klang, Selangor, Malaysia - The Weather Channel | Weather.com",
+      "source": {
+        "name": "The Weather Channel",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://weather.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://weather.com/weather/today/l/3.00,101.40",
+      "date": "06/29/2026, 09:33 PM, +0000 UTC",
+      "iso_date": "2026-06-29T21:33:54Z"
+    },
+    {
+      "position": 5,
+      "title": "Port Klang, Selangor, Malaysia",
+      "source": {
+        "name": "MSN",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.msn.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.msn.com/en-us/weather/pollen/in-Port-Klang,Selangor",
+      "thumbnail": "https://ecn.dev.virtualearth.net/REST/v1/Imagery/Map/roadondemandfull/3.033,101.450/5?mapSize=380,190&shading=terrain&key=AttHHesPGwkZ_u9Gv6v6xckIzWDWjuh_Fb9B6RoAIJl-wY1ds1KtJ6bjlDi0BCim&c=en-us&maxAge=86400&st=me|lv:0;v:0_pp|v:0_cp|v:0_wt|v:1_trs|v:1;lv:0;sc:FF6B6B6B;fc:FF6B6B6B;strokeWidthScale:0.2_cst|v:1;fc:FF000000;strokeWidthScale:0.5_cr|bv:1;bsc:f2000000;borderWidthScale:0.6_ad|bv:1;bsc:f2000000&ml=fg&shdw=true&logo=n&da=n&sftr=newweather&userregion=US",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNHRTa0pMYjA0MFJWRjRjM1ZNVFJDZkFSaS1BaWdCTWdB",
+      "date": "07/08/2026, 08:56 PM, +0000 UTC",
+      "iso_date": "2026-07-08T20:56:36Z"
+    },
+    {
+      "position": 6,
+      "title": "Port operational updates from around the world (15 - 21 July 2026)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-21-07-2026",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/ce39d24a-61c1-463f-9d63-517d5f97af9a.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "07/21/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-07-21T07:00:00Z"
+    },
+    {
+      "position": 7,
+      "title": "Delays, rising costs hit Asia’s trade as Gulf crisis spills beyond oil",
+      "source": {
+        "name": "scmp.com",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.scmp.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Ushar Daniele"
+        ]
+      },
+      "link": "https://www.scmp.com/week-asia/economics/article/3350711/delays-rising-costs-hit-asias-trade-gulf-crisis-spills-beyond-oil",
+      "thumbnail": "https://cdn.i-scmp.com/sites/default/files/styles/700x400/public/d8/images/canvas/2026/04/20/039c3096-e088-485b-847b-122f3b57af29_82f88d53.jpg?itok=IfB8Qby5&v=1776674169",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNW1hVUZQTURscWJrZE9ZWGgzVFJDUUF4aThCU2dLTWdNUmNBSQ",
+      "date": "04/20/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-04-20T07:00:00Z"
+    },
+    {
+      "position": 8,
+      "title": "Klang Air Quality Index (AQI) and Malaysia Air Pollution",
+      "source": {
+        "name": "IQAir",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.iqair.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.iqair.com/air-quality/malaysia/selangor/klang",
+      "thumbnail": "https://www.iqair.com/dl/assets/img/iqair-pollution-map-city-preview@1x.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNlbkJUWkhSb1UxQkRTSGRRVFJEX0JCamdBeWdLTWdZWkFaYnhsQWs",
+      "date": "06/22/2026, 11:15 PM, +0000 UTC",
+      "iso_date": "2026-06-22T23:15:27Z"
+    },
+    {
+      "position": 9,
+      "title": "Port Klang, Selangor, Malaysia",
+      "source": {
+        "name": "MSN",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.msn.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.msn.com/en-us/weather/forecast/in-Port-Klang,Selangor",
+      "date": "07/08/2026, 08:32 PM, +0000 UTC",
+      "iso_date": "2026-07-08T20:32:13Z"
+    },
+    {
+      "position": 10,
+      "title": "Port and weather delays squeeze space into Australia",
+      "source": {
+        "name": "Daily Cargo News",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.thedcn.com.au&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Amanda Bradfield"
+        ]
+      },
+      "link": "https://www.thedcn.com.au/news/port-and-weather-delays-squeeze-space-into-australia",
+      "thumbnail": "https://45697296.fs1.hubspotusercontent-na1.net/hubfs/45697296/Fremantle%20Harbour%20EDITORIAL%20EnthusiasticPhotographers%20Shutterstock_2642081717.png",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNDBhMGMyYW5veVZXbGpablJ1VFJDUUF4ai1CU2dLTWdB",
+      "date": "08/14/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-08-14T07:00:00Z"
+    },
+    {
+      "position": 11,
+      "title": "KIP REIT terminates Port Klang Free Zone property deal after 21-month delay",
+      "source": {
+        "name": "The Malaysian Reserve",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://themalaysianreserve.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://themalaysianreserve.com/2026/06/04/kip-reit-terminates-port-klang-free-zone-property-deal-after-21-month-delay/",
+      "thumbnail": "https://themalaysianreserve.com/wp-content/uploads/2025/04/KIP-Real-Estate-Investment-Trust-e1790748577315-250x154.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFlVTg0V1daelExbElRMlJOVFJDYUFSajZBU2dLTWdZcEZaYXNrUW8",
+      "date": "06/04/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-04T07:00:00Z"
+    },
+    {
+      "position": 12,
+      "title": "Operator: Expansion plan disruption only temporary",
+      "source": {
+        "name": "The Star",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.thestar.com.my&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thestar.com.my/metro/metro-news/2026/06/02/operator-expansion-plan-disruption-only-temporary",
+      "thumbnail": "https://apicms.thestar.com.my/uploads/images/2026/06/02/3937905.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXVaSGxuZGtsVlN6SmlkR2N3VFJEZ0F4aUFCU2dLTWdZQm1ZcmtzZ1k",
+      "date": "06/02/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-06-02T07:00:00Z"
+    },
+    {
+      "position": 13,
+      "title": "Carl Vinson Carrier Strike Group arrives at Port Klang, Malaysia",
+      "source": {
+        "name": "cpf.navy.mil",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.cpf.navy.mil&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.cpf.navy.mil/Newsroom/News/Article/4018248/carl-vinson-carrier-strike-group-arrives-at-port-klang-malaysia/",
+      "thumbnail": "https://media.defense.gov/2024/Dec/30/2003619665/600/400/0/241229-N-AC395-1007.JPG",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTNlRUl4Y2t3d1drdHVTV2N4VFJEYkFSallCQ2dLTWdhRmNJd0dzUVU",
+      "date": "12/30/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-12-30T08:00:00Z"
+    },
+    {
+      "position": 14,
+      "title": "Malaysian ports eye rerouted cargo, even as Middle East tensions at Hormuz risk congestion",
+      "source": {
+        "name": "The Business Times",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.businesstimes.com.sg&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Chuah Bee"
+        ]
+      },
+      "link": "https://www.businesstimes.com.sg/international/asean/malaysian-ports-eye-rerouted-cargo-even-middle-east-tensions-hormuz-risk-congestion",
+      "thumbnail": "https://cassette.sphdigital.com.sg/image/businesstimes/37415dcdb4fbd382ab245592d9c110e43e3d99ea1454ce5edd1b1614ade72dae?w=960&dpr=1&f=webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVVTbXd3Ymxkc01YUXdNMjVRVFJERkF4aWxCU2dLTWdZUmxvd29OZ1k",
+      "date": "03/18/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-03-18T07:00:00Z"
+    },
+    {
+      "position": 15,
+      "title": "Port operational updates from around the world (12 -18 December 2025)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-18-12-2025",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/072137af-52d0-4c96-8948-d5df6a592258.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "12/18/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-12-18T08:00:00Z"
+    },
+    {
+      "position": 16,
+      "title": "USS Abraham Lincoln (CVN 72) Arrives at Port Klang, Malaysia for First U.S. Carrier Visit in 12 years",
+      "source": {
+        "name": "navy.mil",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.navy.mil&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.navy.mil/Press-Office/News-Stories/display-news/Article/3977137/uss-abraham-lincoln-cvn-72-arrives-at-port-klang-malaysia-for-first-us-carrier/",
+      "thumbnail": "https://media.defense.gov/2024/Nov/25/2003593270/600/400/0/241123-N-PT073-1070.JPG",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdZV2R6WDBJME9YTjRWV3htVFJDUUF4allCQ2dLTWdhUkU0U0h5Z00",
+      "date": "11/25/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-11-25T08:00:00Z"
+    },
+    {
+      "position": 17,
+      "title": "Port operational updates from around the world (20...",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-26-02-2026",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/c3806ef6-b333-462c-9d50-81f01fc6d1bb.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "02/26/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-26T08:00:00Z"
+    },
+    {
+      "position": 18,
+      "title": "Carl Vinson Carrier Strike Group Arrives at Port Klang, Malaysia",
+      "source": {
+        "name": "cpf.navy.mil",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.cpf.navy.mil&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.cpf.navy.mil/Photo-Gallery/igphoto/2003619689/",
+      "thumbnail": "https://media.defense.gov/2024/Dec/30/2003619689/-1/-1/0/241229-N-FS097-1191.JPG",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNTFXazlKYXpOME16aDJlVFZwVFJDM0FSaVRBaWdCTWdrVkE0NEp0bVdEaGdJ",
+      "date": "12/29/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-12-29T08:00:00Z"
+    },
+    {
+      "position": 19,
+      "title": "Port operational updates from around the world (8 ...",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/shipping-news-port-disruption-week3325-update",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/977d7aca-b360-4fca-95f3-ed2c7429f0fb.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "08/13/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-08-13T07:00:00Z"
+    },
+    {
+      "position": 20,
+      "title": "Port operational updates from around the world (23 - 29 January 2026)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-29-01-2026",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/8f258cee-db14-4943-a2bb-3c7aa4646a75.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "01/29/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-01-29T08:00:00Z"
+    },
+    {
+      "position": 21,
+      "title": "Port operational updates from around the world (27 February - 5 March 2026)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-06-03-2026",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/e88444b2-38a2-45dc-929c-45864e62cc07.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXRjR3c0WDFkZlJFeGFObXhQVFJDZkF4ampCU2dLTWdhRmNZeU90UWM",
+      "date": "03/06/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-03-06T08:00:00Z"
+    },
+    {
+      "position": 22,
+      "title": "Port operational updates from around the world (13 - 19 February 2026)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-19-02-2026",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/fad449cd-c78d-441c-8cee-ff759e0d7e9f.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "02/19/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-19T08:00:00Z"
+    },
+    {
+      "position": 23,
+      "title": "USS Carl Vinson Hosts the Port Klang Cruise Terminal Board of Directors and Management Team",
+      "source": {
+        "name": "DVIDS",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.dvidshub.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.dvidshub.net/image/8821101/uss-carl-vinson-hosts-port-klang-cruise-terminal-board-directors-and-management-team",
+      "thumbnail": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2501/8821101/1000w_q95.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVpWMUpQV0RGSVJuTmlVRTlVVFJERUF4aW1CU2dLTWdhQllaakpLQWs",
+      "date": "02/01/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-02-01T08:00:00Z"
+    },
+    {
+      "position": 24,
+      "title": "Port operational updates from around the world (30 January - 5 February 2026)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-05-02-2026",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/ea0b91b7-8311-44dd-bba0-85cdfd66ec41.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXlURGhwVW1WV1VXWTJTVlpEVFJDZkF4ampCU2dLTWdZQllvNXVzUVk",
+      "date": "02/05/2026, 08:00 AM, +0000 UTC",
+      "iso_date": "2026-02-05T08:00:00Z"
+    },
+    {
+      "position": 25,
+      "title": "USS Carl Vinson Hosts the Port Klang Cruise Terminal Board of Directors and Management Team",
+      "source": {
+        "name": "DVIDS",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.dvidshub.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.dvidshub.net/image/8821045/uss-carl-vinson-hosts-port-klang-cruise-terminal-board-directors-and-management-team",
+      "thumbnail": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2501/8821045/1000w_q95.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNDVNa1pqV200d1N6QTNiMFYwVFJERUF4aW1CU2dLTWdrQkVKREtxZWRNN2dF",
+      "date": "02/01/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-02-01T08:00:00Z"
+    },
+    {
+      "position": 26,
+      "title": "Carl Vinson Strike Group Meets with Royal Malaysian Navy First Admiral Prior to Departing Port Klang",
+      "source": {
+        "name": "DVIDS",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.dvidshub.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.dvidshub.net/image/8820989/carl-vinson-strike-group-meets-with-royal-malaysian-navy-first-admiral-prior-departing-port-klang",
+      "thumbnail": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2501/8820989/1000w_q95.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDVjV1kzTkVodlZGSXhiM2hFVFJEMEFoaTVCaWdLTWdZQlVJN0VwQWM",
+      "date": "01/02/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-01-02T08:00:00Z"
+    },
+    {
+      "position": 27,
+      "title": "Port operational updates from around the world (10 - 16 April 2025)",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/port-operational-updates-from-around-the-worl-17-Apr-2025",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/977db630-37b7-4f2b-bcb2-08f453ac8506.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUdZMngzVmpRd1ZERmlhemhPVFJDZkF4ampCU2dLTWdZTllvNk9zUWM",
+      "date": "04/17/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-04-17T07:00:00Z"
+    },
+    {
+      "position": 28,
+      "title": "Flooding in Malaysia causes road closures and disrupts transport",
+      "source": {
+        "name": "Kuehne+Nagel",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://mykn.kuehne-nagel.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mykn.kuehne-nagel.com/news/article/flooding-in-malaysia-causes-road-closures",
+      "thumbnail": "https://imgs.newseditor.aws.kuehne-nagel.cloud/8e35687a-d34c-45e4-a02f-6f8d260a2d9c.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVlOWEExV0hNd2RrRmxUSEpEVFJDZkF4ampCU2dLTWdiRjRZcjFTQVE",
+      "date": "11/24/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-11-24T08:00:00Z"
+    },
+    {
+      "position": 29,
+      "title": "Severe Weather Wrecks Southeast Asia as 200 Dead, Ports Shut",
+      "source": {
+        "name": "SupplyChainBrain",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.supplychainbrain.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.supplychainbrain.com/articles/34287-severe-weather-wrecks-southeast-asia-as-200-dead-ports-shut",
+      "thumbnail": "https://www.supplychainbrain.com/ext/resources/0-images/article-images/2021/1220_PortKlangMalaysia.webp?t=1657907213&width=1080",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNW9SV054YURWbk56SkZWSFoyVFJEZ0F4aUFCU2dLTWdB",
+      "date": "12/20/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-12-20T08:00:00Z"
+    },
+    {
+      "position": 30,
+      "title": "USS Carl Vinson Hosts the Port Klang Cruise Terminal Board of Directors and Management Team",
+      "source": {
+        "name": "DVIDS",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.dvidshub.net&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.dvidshub.net/image/8821030/uss-carl-vinson-hosts-port-klang-cruise-terminal-board-directors-and-management-team",
+      "thumbnail": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2501/8821030/1000w_q95.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVpaVmh3YjNGMVZuWkRNbVZmVFJERUF4aW1CU2dLTWdZQmNKREp0UVk",
+      "date": "02/01/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-02-01T08:00:00Z"
+    },
+    {
+      "position": 31,
+      "title": "Carrier USS Carl Vinson Pulls into Malaysia",
+      "source": {
+        "name": "USNI News",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://news.usni.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://news.usni.org/2024/12/30/carrier-uss-carl-vinson-pulls-into-malaysia",
+      "thumbnail": "https://news.usni.org/wp-content/uploads/2024/12/8817620-scaled.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXFNMDkwU0ZoSGNrYzFRa3BXVFJESkF4aWZCU2dLTWdZZDRJcnR5QVE",
+      "date": "12/30/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-12-30T08:00:00Z"
+    },
+    {
+      "position": 32,
+      "title": "Port Klang and Piraeus join Ningbo and LA at the top of the congestion charts",
+      "source": {
+        "name": "Splash 24/7",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://splash247.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Sam Chambers"
+        ]
+      },
+      "link": "https://splash247.com/port-klang-and-piraeus-join-ningbo-and-la-at-the-top-of-the-congestion-charts/",
+      "thumbnail": "https://splash247.com/wp-content/uploads/2021/05/Northport-Klang-780x470.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXFSR3hQWTNkNWVuaE9RVXhMVFJDdUF4aktCU2dLTWdrTllJQ3N0S1NwT1FB",
+      "date": "12/15/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-12-15T08:00:00Z"
+    },
+    {
+      "position": 33,
+      "title": "Port Klang transport workers threaten week-long strike, stakeholders criticise",
+      "source": {
+        "name": "container-news.com",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://container-news.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://container-news.com/port-klang-transport-workers-threaten-week-long-strike-stakeholders-criticise/",
+      "thumbnail": "https://container-news.com/wp-content/uploads/2021/01/Westports-Container-Terminal-Port-Klang-Source-Westports-696x461.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFhMEpNV1ZVdFZEQjJaSFJTVFJEREF4aXBCU2dLTWdZQlFJckNwQWM",
+      "date": "12/10/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-12-10T08:00:00Z"
+    },
+    {
+      "position": 34,
+      "title": "Port Klang suffers severe flooding, affecting port and logistics operations",
+      "source": {
+        "name": "Port Technology",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.porttechnology.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.porttechnology.org/news/ports-and-terminals/port-klang-suffers-severe-flooding-affecting-port-and-logistics-operations/",
+      "thumbnail": "https://wpassets.porttechnology.org/wp-content/uploads/2020/03/25161029/iStock-497116242-1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNUJUVGxGVjBVd1pqbGhaamxNVFJERUF4aW1CU2dLTWdNQm9BNA",
+      "date": "12/22/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-12-22T08:00:00Z"
+    },
+    {
+      "position": 35,
+      "title": "Hauliers lament rising logistics costs with WCE Section 4 delay",
+      "source": {
+        "name": "mediaselangor.com",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://mediaselangor.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://mediaselangor.com/en/2026/09/392151",
+      "thumbnail": "https://mssb-media.xcms.io/publisher-c1a3f893382d2b2f8a9aa22a654d9c97/2026/08/78b4abf0d1d2bb85e865b20e42ab7cb2.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUhPWEJGT0RZNWFVeHZWR1o2VFJEREF4aW9CU2dLTWdZUm9KSXB1Z1k",
+      "date": "09/04/2026, 01:20 AM, +0000 UTC",
+      "iso_date": "2026-09-04T01:20:29Z"
+    },
+    {
+      "position": 36,
+      "title": "News Rising costs of port congestion force surcharge by Asian feeder operators",
+      "source": {
+        "name": "The Loadstar",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://theloadstar.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://theloadstar.com/rising-costs-from-port-congestion-force-surcharge-from-asian-feeder-operators/",
+      "thumbnail": "https://theloadstar.com/wp-content/uploads/1105ebcef6c1371cbec34670aca799fa-680x0-c-default.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNVhNWFpJZEhKS2VGZFNOVEpuVFJDekF4aW9CU2dLTWdNQmdBQQ",
+      "date": "04/26/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-04-26T07:00:00Z"
+    },
+    {
+      "position": 37,
+      "title": "Port Klang congestion reduced by single-window system",
+      "source": {
+        "name": "Freight News",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.freightnews.co.za&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.freightnews.co.za/article/port-klang-congestion-reduced-by-single-window-system",
+      "thumbnail": "https://www.freightnews.co.za/files/styles/article_large/public/article/headline/2025-02/6portk.png?h=f7e4845f&itok=uuRZlnOL",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUtMWFpQVWxRNWFVUXRjbGxLVFJDZkF4ampCU2dLTWdrRk1JU2t6aUpVeUFF",
+      "date": "02/27/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-02-27T08:00:00Z"
+    },
+    {
+      "position": 38,
+      "title": "Port Klang, Selangor, Malaysia Weather Forecast",
+      "source": {
+        "name": "AccuWeather",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.accuweather.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.accuweather.com/en/my/port-klang/230429/weather-forecast/230429",
+      "thumbnail": "https://static-maps.accuweather.com/v1/radar/latest?level=city&theme=light&size=lg&locationKey=230429&mode=image",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNXlOVlpoWm14VlRYWlROR041VFJDb0FSaXNBaWdCTWdB",
+      "date": "03/04/2017, 01:58 AM, +0000 UTC",
+      "iso_date": "2017-03-04T01:58:02Z"
+    },
+    {
+      "position": 39,
+      "title": "USS Abraham Lincoln (CVN 72) Arrives at Port Klang, Malaysia for First U.S. Carrier Visit in 12 years",
+      "source": {
+        "name": "Defence Security Asia",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://defencesecurityasia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://defencesecurityasia.com/en/uss-abraham-lincoln-cvn-72-arrives-at-port-klang-malaysia-for-first-u-s-carrier-visit-in-12-years/",
+      "thumbnail": "https://i0.wp.com/defencesecurityasia.com/wp-content/uploads/2024/11/maxresdefault-1.jpg?resize=750%2C430&ssl=1",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXdTemM0TkdWRU1XcHJSVE10VFJDakF4amJCU2dLTWdhWkFvNXBHUWM",
+      "date": "11/23/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-11-23T08:00:00Z"
+    },
+    {
+      "position": 40,
+      "title": "High Tide Phenomena In Klang, Sea Level Could Hit 5.2 Metres",
+      "source": {
+        "name": "BusinessToday Malaysia",
+        "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.businesstoday.com.my&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.businesstoday.com.my/2025/05/24/high-tide-phenomena-in-klang-sea-level-could-hit-5-2-metres/",
+      "thumbnail": "https://www.businesstoday.com.my/wp-content/uploads/2025/05/klnag-high-tide-696x558.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNXFYM2RPYVdzd1lrVXljbVJDVFJEd0F4anJCQ2dLTWdB",
+      "date": "05/24/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-05-24T07:00:00Z"
+    },
+    {
+      "position": 41,
+      "title": "Port Klang on track to normalcy after months of delays",
+      "source": {
+        "name": "The Star",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.thestar.com.my&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.thestar.com.my/news/nation/2024/08/06/port-klang-on-track-to-normalcy-after-months-of-delays",
+      "thumbnail": "https://apicms.thestar.com.my/uploads/images/2024/08/06/2842957.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXFaVnBhVUZwM1VGbGFSVzlTVFJERUF4aW1CU2dLTWdNQlVBZw",
+      "date": "08/06/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-08-06T07:00:00Z"
+    },
+    {
+      "position": 42,
+      "title": "Port Klang hits record of 13.6m TEUs containers this year",
+      "source": {
+        "name": "The Malaysian Reserve",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://themalaysianreserve.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Anis Hazim"
+        ]
+      },
+      "link": "https://themalaysianreserve.com/2021/12/30/port-klang-hits-record-of-13-6m-teus-containers-this-year/",
+      "thumbnail": "https://themalaysianreserve.com/wp-content/uploads/2021/10/06TR006A1-1.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHljRlJ4TFRnMWFHbFlXakpsVFJDaEF4amdCU2dLTWdZUk5JU0gxZ0k",
+      "date": "12/30/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-12-30T08:00:00Z"
+    },
+    {
+      "position": 43,
+      "title": "Congestion in Port Klang after ships hit by delays, bad weather, says PKA",
+      "source": {
+        "name": "Malay Mail",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.malaymail.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.malaymail.com/news/malaysia/2020/12/24/congestion-in-port-klang-after-ships-hit-by-delays-bad-weather-says-pka/1934625",
+      "thumbnail": "https://www.malaymail.com/uploads/imported_images/2020/2020-10/klang_cmco_0810_(5).JPG?v=1790342700",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNUNYMWgwV0ROMk5XdENTVUZSVFJERUF4aW5CU2dLTWdNSlVBSQ",
+      "date": "12/24/2020, 08:00 AM, +0000 UTC",
+      "iso_date": "2020-12-24T08:00:00Z"
+    },
+    {
+      "position": 44,
+      "title": "Congestion at Port Klang see ships taking up to nine hours to dock [NSTTV]",
+      "source": {
+        "name": "NST Online",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.nst.com.my&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Shahila Aman"
+        ]
+      },
+      "link": "https://www.nst.com.my/business/economy/2024/05/1046030/congestion-port-klang-see-ships-taking-nine-hours-dock-nsttv",
+      "thumbnail": "https://storage.googleapis.com/origin-awsassets.nst.com.my/images/articles/port03_NSTfield_image_socialmedia.var_1714752120.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVZlVXBWYUVwamFXOWpZM2RSVFJDUkF4ajlCU2dLTWdZQlFKQ21KUWM",
+      "date": "05/03/2024, 07:00 AM, +0000 UTC",
+      "iso_date": "2024-05-03T07:00:00Z"
+    },
+    {
+      "position": 45,
+      "title": "MMC Port’s IPO might be delayed, say sources",
+      "source": {
+        "name": "The Edge Malaysia",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://theedgemalaysia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Farhana Zainul",
+          "Jose Barrock"
+        ]
+      },
+      "link": "https://theedgemalaysia.com/node/768094",
+      "thumbnail": "https://theedgemalaysia.com/_next/image?url=https%3A%2F%2Fassets.theedgemarkets.com%2FTanjung-Pelepas_TEM1589_theedgemalaysia_20250827164828_theedgemalaysia.jpg&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iJ0NnNXdVSFo0ZDNwR1dubHdTM1k0VFJERUF4aW1CU2dLTWdNQnNRUQ",
+      "date": "09/01/2025, 07:00 AM, +0000 UTC",
+      "iso_date": "2025-09-01T07:00:00Z"
+    },
+    {
+      "position": 46,
+      "title": "Eleven organisations take Port Klang rep to task over 'irresponsible' call for drivers' strike",
+      "source": {
+        "name": "The Star",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.thestar.com.my&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Wani Muthiah"
+        ]
+      },
+      "link": "https://www.thestar.com.my/news/nation/2021/12/10/eleven-organisations-take-port-klang-rep-to-task-over-039irresponsible039-call-for-drivers039-strike",
+      "thumbnail": "https://apicms.thestar.com.my/uploads/images/2021/12/10/1400514.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVVkSHBuTVhwS2FIRjVRVEpUVFJEU0F4aVJCU2dLTWdZaFZZenNLUWM",
+      "date": "12/10/2021, 08:00 AM, +0000 UTC",
+      "iso_date": "2021-12-10T08:00:00Z"
+    },
+    {
+      "position": 47,
+      "title": "High tide in Port Klang passes without major incident",
+      "source": {
+        "name": "The Star",
+        "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.thestar.com.my&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+        "authors": [
+          "Edward Rajendra"
+        ]
+      },
+      "link": "https://www.thestar.com.my/metro/metro-news/2024/11/15/high-tide-in-port-klang-passes-without-major-incident",
+      "thumbnail": "https://apicms.thestar.com.my/uploads/images/2024/11/15/3018115.webp",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdZVTlTYkhsT1MzaHNRV2RNVFJDZUF4anNCQ2dLTWdZQmtJb011UVU",
+      "date": "11/15/2024, 08:00 AM, +0000 UTC",
+      "iso_date": "2024-11-15T08:00:00Z"
+    },
+    {
+      "position": 48,
+      "title": "Port Klang Authority to waive storage and removal charges for non-essential goods stuck at port",
+      "source": {
+        "name": "The Edge Malaysia",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://theedgemalaysia.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://theedgemalaysia.com/article/port-klang-authority-waive-storage-and-removal-charges-nonessential-goods-stuck-port",
+      "thumbnail": "https://theedgemalaysia.com/_next/image?url=https%3A%2F%2Fassets.theedgemarkets.com%2FPort-Klang-1_Wikipedia_4.jpg&w=1920&q=75",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVhRbVpvTlU5VFNtRnBSVEpYVFJDM0FSaVRBaWdCTWdrQkFJamhsdVJqaEFJ",
+      "date": "03/26/2020, 07:00 AM, +0000 UTC",
+      "iso_date": "2020-03-26T07:00:00Z"
+    },
+    {
+      "position": 49,
+      "title": "Malaysia, China boost port cooperation to weather geopolitical uncertainties",
+      "source": {
+        "name": "KLSE Screener",
+        "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.klsescreener.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://www.klsescreener.com/v2/news/view/1725329/Malaysia_China_boost_port_cooperation_to_weather_geopolitical_uncertainties",
+      "thumbnail": "https://assets.theedgemarkets.com/433747855-trade-shipping-gantry%20cranes%20are%20silhouetted%20at%20dusk%20at%20the%20Northport%20in%20Port%20Klang-Selangor-Malaysia-Aug16.2022px-SamsulSaid_APP_Bloomberg_4.jpg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNUtORlYzZVZWalNtdHlXRVE0VFJERUF4aW1CU2dLTWdB",
+      "date": "05/21/2026, 07:00 AM, +0000 UTC",
+      "iso_date": "2026-05-21T07:00:00Z"
+    },
+    {
+      "position": 50,
+      "title": "KTM's KVDT2 project progressing, work on KL Sentral - Port Klang stretch next - announcement on Jan 15",
+      "source": {
+        "name": "Paul Tan's Automotive News",
+        "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://paultan.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+      },
+      "link": "https://paultan.org/2025/01/07/ktms-kvdt2-project-progressing-work-on-kl-sentral-port-klang-stretch-next-announcement-on-jan-15/",
+      "thumbnail": "https://paultan.org/image/2024/11/ktmb-komuter-train-1-BM-e1730685685452.jpeg",
+      "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdVWFpoUm5wa1ZHbGZRWGwyVFJDdEF4akxCU2dLTWdZVlFKUkpwUWM",
+      "date": "01/07/2025, 08:00 AM, +0000 UTC",
+      "iso_date": "2025-01-07T08:00:00Z"
+    }
+  ],
+  "menu_links": [
+    {
+      "title": "U.S.",
+      "topic_token": "CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE"
+    },
+    {
+      "title": "World",
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB"
+    },
+    {
+      "title": "Your local news",
+      "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+    },
+    {
+      "title": "Business",
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB"
+    },
+    {
+      "title": "Technology",
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB"
+    },
+    {
+      "title": "Entertainment",
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB"
+    },
+    {
+      "title": "Sports",
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB"
+    },
+    {
+      "title": "Science",
+      "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB"
+    },
+    {
+      "title": "Health",
+      "topic_token": "CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ"
+    }
+  ]
+}

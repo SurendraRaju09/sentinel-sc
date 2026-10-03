@@ -1,0 +1,21 @@
+{
+  "agent": "SignalAgent",
+  "timestamp": "2026-10-03T07:03:14.845660+00:00",
+  "status": "ACTIVE",
+  "disruption_event": {
+    "event_type": "WEATHER_EVENT",
+    "port_name": "Port Klang",
+    "vessel_name": "MV Nordic Blue",
+    "estimated_delay_days": 7,
+    "confidence": 0.92,
+    "raw_headline": "Typhoon conditions force vessel movement restrictions at Port Klang, Malaysia",
+    "source": "FIXTURE",
+    "signal_timestamp": "2026-10-03T07:03:14.845129Z",
+    "shipment_id": "SHIP-6205-01",
+    "po_id": "PO-2026-512",
+    "revised_eta": "2026-10-18",
+    "status": "ACTIVE",
+    "ignore_reason": null
+  },
+  "trace_log": "Signal Agent: detected [WEATHER_EVENT] at Port Klang delay=+7d -> Status: ACTIVE (Shipment: SHIP-6205-01)"
+}
