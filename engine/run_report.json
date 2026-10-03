@@ -1,0 +1,564 @@
+{
+  "generated_at": "2026-10-03T12:00:44.164412",
+  "reference_date": "2026-10-03",
+  "dod_all_passed": true,
+  "test_results": [
+    {
+      "test_id": 1,
+      "name": "TTS < TTR -> SHORTAGE",
+      "passed": true,
+      "detail": "TTS=5 TTR=15"
+    },
+    {
+      "test_id": 2,
+      "name": "TTS == TTR -> ABSORBED (edge case)",
+      "passed": true,
+      "detail": "TTS=15 TTR=15 -> ABSORBED"
+    },
+    {
+      "test_id": 3,
+      "name": "Scenario B: recovery_required=False AND exposure=0",
+      "passed": true,
+      "detail": "TTS=20 TTR=15 exposure=$0.0"
+    },
+    {
+      "test_id": 4,
+      "name": "Exact: 500 * 240 == $120,000",
+      "passed": true,
+      "detail": "WO-7782: SO-55102 -> $120,000 exact"
+    },
+    {
+      "test_id": 5,
+      "name": "WO-7781 no peg -> zero exposure",
+      "passed": true,
+      "detail": "WO-7781: co_id=None exposure=$0.0"
+    },
+    {
+      "test_id": 6,
+      "name": "WO-7783 outside window -> zero exposure",
+      "passed": true,
+      "detail": "WO-7783: start=2026-10-19 outside window -> $0"
+    },
+    {
+      "test_id": 15,
+      "name": "Window boundary: planned_start == shortage_end IS exposed (inclusive)",
+      "passed": true,
+      "detail": "planned_start=shortage_end=2026-10-18 -> in_window=True, exposure=$5000.0"
+    },
+    {
+      "test_id": 7,
+      "name": "Synthetic A->B->C->A BOM cycle terminates",
+      "passed": true,
+      "detail": "Cycle A->B->C->A terminated. Ancestors={'B', 'C', 'A'}"
+    },
+    {
+      "test_id": 8,
+      "name": "CAPACITOR-100 / COPPER-WIRE-2 not in STCOIL-440V ancestors",
+      "passed": true,
+      "detail": "STCOIL-440V ancestors={'APEXM-100', 'MOTOR-ASSY-01'}. Noise materials absent."
+    },
+    {
+      "test_id": 9,
+      "name": "NA handling: C4=NA for SPOT_BUY, C1=NA for RESCHEDULE",
+      "passed": true,
+      "detail": "OPT-A C4=NA, OPT-D C1=NA"
+    },
+    {
+      "test_id": 12,
+      "name": "C1-C8 evaluation: all 4 option verdicts match seed data",
+      "passed": true,
+      "detail": "OPT-A=APPROVAL_REQUIRED, OPT-B=VETO(C1), OPT-C=VETO(C3,C6), OPT-D=VETO(C4)"
+    },
+    {
+      "test_id": 10,
+      "name": "MOQ mutation: EuroCoils MOQ=1000 -> C2 FAIL (no code change)",
+      "passed": true,
+      "detail": "MOQ=1000: C2=RuleStatus.FAIL, option=OptionStatus.VETO"
+    },
+    {
+      "test_id": 11,
+      "name": "Mutation rollback: MOQ=200 -> C2 PASS again",
+      "passed": true,
+      "detail": "MOQ=200 restored: C2=RuleStatus.PASS, option=OptionStatus.APPROVAL_REQUIRED"
+    },
+    {
+      "test_id": 13,
+      "name": "All three DoD paths: A=SHORTAGE, B=ABSORBED, C=IGNORED",
+      "passed": true,
+      "detail": "A=SHORTAGE(3VETO+1APPROVAL), B=ABSORBED, C=IGNORED"
+    },
+    {
+      "test_id": 14,
+      "name": "run_report.json written and Pydantic round-trip validates",
+      "passed": true,
+      "detail": "run_report.json written (18878 bytes). Round-trip PASS."
+    },
+    {
+      "test_id": 16,
+      "name": "Non-zero exit on failed DoD (mechanism verified)",
+      "passed": true,
+      "detail": "Exit code = 0 if fail_count==0, else 1. Mechanism verified."
+    }
+  ],
+  "pass_count": 16,
+  "total_count": 16,
+  "scenario_a": {
+    "status": "SHORTAGE",
+    "tts_days": 5,
+    "ttr_days": 15,
+    "shortage_days": 10,
+    "total_otif_exposure": 120000.0,
+    "recovery_required": true,
+    "impact_assessment": {
+      "shipment_id": "SHIP-440V-01",
+      "po_id": "PO-2026-441",
+      "reference_date": "2026-10-03",
+      "shortage": {
+        "material_id": "STCOIL-440V",
+        "material_name": "Stator Coil 440V (Primary)",
+        "on_hand_qty": 400.0,
+        "daily_consumption": 80.0,
+        "tts_days": 5,
+        "stockout_date": "2026-10-08",
+        "ttr_days": 15,
+        "revised_eta": "2026-10-18",
+        "shortage_days": 10,
+        "shortage_start": "2026-10-08",
+        "shortage_end": "2026-10-18"
+      },
+      "affected_work_orders": [
+        {
+          "wo_id": "WO-7781",
+          "co_id": null,
+          "product_id": "APEXM-100",
+          "qty": 50.0,
+          "planned_start": "2026-10-05",
+          "due_date": "2026-10-20",
+          "required_material_qty": 100.0,
+          "in_shortage_window": false,
+          "otif_exposure": 0.0
+        },
+        {
+          "wo_id": "WO-7782",
+          "co_id": "SO-55102",
+          "product_id": "APEXM-100",
+          "qty": 50.0,
+          "planned_start": "2026-10-14",
+          "due_date": "2026-10-22",
+          "required_material_qty": 80.0,
+          "in_shortage_window": true,
+          "otif_exposure": 120000.0
+        },
+        {
+          "wo_id": "WO-7783",
+          "co_id": null,
+          "product_id": "APEXM-100",
+          "qty": 30.0,
+          "planned_start": "2026-10-19",
+          "due_date": "2026-10-25",
+          "required_material_qty": 60.0,
+          "in_shortage_window": false,
+          "otif_exposure": 0.0
+        }
+      ],
+      "total_otif_exposure": 120000.0,
+      "status": "SHORTAGE",
+      "recovery_required": true
+    },
+    "recovery_plan": {
+      "shipment_id": "SHIP-440V-01",
+      "po_id": "PO-2026-441",
+      "reference_date": "2026-10-03",
+      "shortage_days": 10,
+      "total_otif_exposure": 120000.0,
+      "candidates": [
+        {
+          "option_id": "OPT-A",
+          "option_type": "SPOT_BUY",
+          "supplier_id": "SUPP-003",
+          "material_id": "STCOIL-440V",
+          "description": "Spot buy 800 units STCOIL-440V from EuroCoils GmbH via air freight",
+          "total_cost": 30100.0,
+          "estimated_arrival": "2026-10-10",
+          "days_of_coverage": 9,
+          "constraint_result": {
+            "option_id": "OPT-A",
+            "option_status": "APPROVAL_REQUIRED",
+            "rules": [
+              {
+                "rule_id": "C1",
+                "rule_name": "Lead Time Feasibility",
+                "status": "PASS",
+                "evidence": "lead_time_days=7 <= available_days=15.",
+                "threshold": "15",
+                "actual": "7"
+              },
+              {
+                "rule_id": "C2",
+                "rule_name": "Minimum Order Quantity",
+                "status": "PASS",
+                "evidence": "supplier.moq=200 <= required_qty=800. Can place order.",
+                "threshold": "800",
+                "actual": "200"
+              },
+              {
+                "rule_id": "C3",
+                "rule_name": "PPAP Certification",
+                "status": "PASS",
+                "evidence": "Supplier SUPP-003 holds valid PPAP for this material.",
+                "threshold": "PPAP",
+                "actual": "PPAP"
+              },
+              {
+                "rule_id": "C4",
+                "rule_name": "Frozen Schedule Window",
+                "status": "NA",
+                "evidence": "Not applicable -- not a RESCHEDULE option.",
+                "threshold": "14",
+                "actual": null
+              },
+              {
+                "rule_id": "C5",
+                "rule_name": "Budget Authorization",
+                "status": "PASS",
+                "evidence": "Total cost $30,100 exceeds plant budget $30,000. Routes to VP Supply Chain approval.",
+                "threshold": "30000",
+                "actual": "30100"
+              },
+              {
+                "rule_id": "C6",
+                "rule_name": "BOM Revision Compatibility",
+                "status": "PASS",
+                "evidence": "Material compatible_revisions=['REV-D'] includes REV-D.",
+                "threshold": "REV-D",
+                "actual": "['REV-D']"
+              },
+              {
+                "rule_id": "C7",
+                "rule_name": "Export Compliance",
+                "status": "PASS",
+                "evidence": "Supplier SUPP-003 is not export-restricted.",
+                "threshold": "0",
+                "actual": "0"
+              },
+              {
+                "rule_id": "C8",
+                "rule_name": "Supplier Capacity",
+                "status": "PASS",
+                "evidence": "capacity_per_month=1000 >= required_qty=800.",
+                "threshold": "800",
+                "actual": "1000"
+              }
+            ],
+            "veto_rules": []
+          },
+          "llm_summary": null
+        },
+        {
+          "option_id": "OPT-B",
+          "option_type": "EXPEDITE",
+          "supplier_id": "SUPP-002",
+          "material_id": "STCOIL-440V",
+          "description": "Expedite order from Hanoi Coils Ltd (sea freight only)",
+          "total_cost": 7200.0,
+          "estimated_arrival": "2026-10-21",
+          "days_of_coverage": 0,
+          "constraint_result": {
+            "option_id": "OPT-B",
+            "option_status": "VETO",
+            "rules": [
+              {
+                "rule_id": "C1",
+                "rule_name": "Lead Time Feasibility",
+                "status": "FAIL",
+                "evidence": "lead_time_days=18 exceeds available_days=15. Arrival ~18 days out.",
+                "threshold": "15",
+                "actual": "18"
+              },
+              {
+                "rule_id": "C2",
+                "rule_name": "Minimum Order Quantity",
+                "status": "PASS",
+                "evidence": "supplier.moq=300 <= required_qty=800. Can place order.",
+                "threshold": "800",
+                "actual": "300"
+              },
+              {
+                "rule_id": "C3",
+                "rule_name": "PPAP Certification",
+                "status": "FAIL",
+                "evidence": "No PPAP certificate found for supplier SUPP-002 and material STCOIL-440V.",
+                "threshold": "PPAP",
+                "actual": "NONE"
+              },
+              {
+                "rule_id": "C4",
+                "rule_name": "Frozen Schedule Window",
+                "status": "NA",
+                "evidence": "Not applicable -- not a RESCHEDULE option.",
+                "threshold": "14",
+                "actual": null
+              },
+              {
+                "rule_id": "C5",
+                "rule_name": "Budget Authorization",
+                "status": "PASS",
+                "evidence": "Total cost $7,200 is within plant budget $30,000.",
+                "threshold": "30000",
+                "actual": "7200"
+              },
+              {
+                "rule_id": "C6",
+                "rule_name": "BOM Revision Compatibility",
+                "status": "PASS",
+                "evidence": "Material compatible_revisions=['REV-D'] includes REV-D.",
+                "threshold": "REV-D",
+                "actual": "['REV-D']"
+              },
+              {
+                "rule_id": "C7",
+                "rule_name": "Export Compliance",
+                "status": "PASS",
+                "evidence": "Supplier SUPP-002 is not export-restricted.",
+                "threshold": "0",
+                "actual": "0"
+              },
+              {
+                "rule_id": "C8",
+                "rule_name": "Supplier Capacity",
+                "status": "PASS",
+                "evidence": "capacity_per_month=1500 >= required_qty=800.",
+                "threshold": "800",
+                "actual": "1500"
+              }
+            ],
+            "veto_rules": [
+              "C1",
+              "C3"
+            ]
+          },
+          "llm_summary": null
+        },
+        {
+          "option_id": "OPT-C",
+          "option_type": "SUBSTITUTE",
+          "supplier_id": "SUPP-004",
+          "material_id": "STCOIL-415V",
+          "description": "Substitute STCOIL-415V from FastCoil Asia Pte via air freight",
+          "total_cost": 25500.0,
+          "estimated_arrival": "2026-10-13",
+          "days_of_coverage": 0,
+          "constraint_result": {
+            "option_id": "OPT-C",
+            "option_status": "VETO",
+            "rules": [
+              {
+                "rule_id": "C1",
+                "rule_name": "Lead Time Feasibility",
+                "status": "PASS",
+                "evidence": "lead_time_days=10 <= available_days=15.",
+                "threshold": "15",
+                "actual": "10"
+              },
+              {
+                "rule_id": "C2",
+                "rule_name": "Minimum Order Quantity",
+                "status": "PASS",
+                "evidence": "supplier.moq=400 <= required_qty=800. Can place order.",
+                "threshold": "800",
+                "actual": "400"
+              },
+              {
+                "rule_id": "C3",
+                "rule_name": "PPAP Certification",
+                "status": "FAIL",
+                "evidence": "No PPAP certificate found for supplier SUPP-004 and material STCOIL-415V.",
+                "threshold": "PPAP",
+                "actual": "NONE"
+              },
+              {
+                "rule_id": "C4",
+                "rule_name": "Frozen Schedule Window",
+                "status": "NA",
+                "evidence": "Not applicable -- not a RESCHEDULE option.",
+                "threshold": "14",
+                "actual": null
+              },
+              {
+                "rule_id": "C5",
+                "rule_name": "Budget Authorization",
+                "status": "PASS",
+                "evidence": "Total cost $25,500 is within plant budget $30,000.",
+                "threshold": "30000",
+                "actual": "25500"
+              },
+              {
+                "rule_id": "C6",
+                "rule_name": "BOM Revision Compatibility",
+                "status": "FAIL",
+                "evidence": "Material compatible_revisions=['REV-C'] does NOT include REV-D. BOM revision incompatible.",
+                "threshold": "REV-D",
+                "actual": "['REV-C']"
+              },
+              {
+                "rule_id": "C7",
+                "rule_name": "Export Compliance",
+                "status": "PASS",
+                "evidence": "Supplier SUPP-004 is not export-restricted.",
+                "threshold": "0",
+                "actual": "0"
+              },
+              {
+                "rule_id": "C8",
+                "rule_name": "Supplier Capacity",
+                "status": "PASS",
+                "evidence": "capacity_per_month=800 >= required_qty=800.",
+                "threshold": "800",
+                "actual": "800"
+              }
+            ],
+            "veto_rules": [
+              "C3",
+              "C6"
+            ]
+          },
+          "llm_summary": null
+        },
+        {
+          "option_id": "OPT-D",
+          "option_type": "RESCHEDULE",
+          "supplier_id": null,
+          "material_id": null,
+          "description": "Reschedule WO-7782 to start after revised ETA 2026-10-18",
+          "total_cost": 0.0,
+          "estimated_arrival": null,
+          "days_of_coverage": 0,
+          "constraint_result": {
+            "option_id": "OPT-D",
+            "option_status": "VETO",
+            "rules": [
+              {
+                "rule_id": "C1",
+                "rule_name": "Lead Time Feasibility",
+                "status": "NA",
+                "evidence": "Not applicable to RESCHEDULE option.",
+                "threshold": "15",
+                "actual": null
+              },
+              {
+                "rule_id": "C2",
+                "rule_name": "Minimum Order Quantity",
+                "status": "NA",
+                "evidence": "Not applicable to RESCHEDULE option.",
+                "threshold": "800",
+                "actual": null
+              },
+              {
+                "rule_id": "C3",
+                "rule_name": "PPAP Certification",
+                "status": "NA",
+                "evidence": "Not applicable to RESCHEDULE option.",
+                "threshold": "PPAP",
+                "actual": null
+              },
+              {
+                "rule_id": "C4",
+                "rule_name": "Frozen Schedule Window",
+                "status": "FAIL",
+                "evidence": "WO-7782 start_date=2026-10-14 is within 14-day frozen window (frozen_schedule=1). Rescheduling blocked.",
+                "threshold": "14",
+                "actual": "1"
+              },
+              {
+                "rule_id": "C5",
+                "rule_name": "Budget Authorization",
+                "status": "NA",
+                "evidence": "RESCHEDULE has $0 cost -- no budget approval needed.",
+                "threshold": "30000",
+                "actual": "0"
+              },
+              {
+                "rule_id": "C6",
+                "rule_name": "BOM Revision Compatibility",
+                "status": "NA",
+                "evidence": "Not applicable to RESCHEDULE option.",
+                "threshold": "REV-D",
+                "actual": null
+              },
+              {
+                "rule_id": "C7",
+                "rule_name": "Export Compliance",
+                "status": "NA",
+                "evidence": "Not applicable to RESCHEDULE option.",
+                "threshold": "0",
+                "actual": null
+              },
+              {
+                "rule_id": "C8",
+                "rule_name": "Supplier Capacity",
+                "status": "NA",
+                "evidence": "Not applicable to RESCHEDULE option.",
+                "threshold": "800",
+                "actual": null
+              }
+            ],
+            "veto_rules": [
+              "C4"
+            ]
+          },
+          "llm_summary": null
+        }
+      ],
+      "vetoed_options": [
+        "OPT-B",
+        "OPT-C",
+        "OPT-D"
+      ],
+      "feasible_options": [
+        "OPT-A"
+      ],
+      "selected_option_id": null,
+      "approval_decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "rejection_reason": null,
+      "audit_summary": null
+    }
+  },
+  "scenario_b": {
+    "status": "ABSORBED",
+    "tts_days": 20,
+    "ttr_days": 15,
+    "shortage_days": 0,
+    "total_otif_exposure": 0.0,
+    "recovery_required": false,
+    "impact_assessment": {
+      "shipment_id": "SHIP-6205-01",
+      "po_id": "PO-2026-512",
+      "reference_date": "2026-10-03",
+      "shortage": {
+        "material_id": "BEARING-6205",
+        "material_name": "Deep Groove Ball Bearing 6205",
+        "on_hand_qty": 2000.0,
+        "daily_consumption": 100.0,
+        "tts_days": 20,
+        "stockout_date": "2026-10-23",
+        "ttr_days": 15,
+        "revised_eta": "2026-10-18",
+        "shortage_days": 0,
+        "shortage_start": null,
+        "shortage_end": null
+      },
+      "affected_work_orders": [],
+      "total_otif_exposure": 0.0,
+      "status": "ABSORBED",
+      "recovery_required": false
+    }
+  },
+  "scenario_c": {
+    "status": "IGNORED",
+    "vessel": "MV Pacific Trader",
+    "port": "Manila",
+    "db_match": null
+  }
+}

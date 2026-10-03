@@ -46,30 +46,28 @@ class ImpactStatus(str, Enum):
 # ─────────────────────────────────────────────────────────────────
 
 class AffectedWorkOrder(BaseModel):
-    """A single work order impacted by the material shortage."""
-    wo_id              : str   = Field(..., description="Work order ID (e.g. WO-7781).")
-    co_id              : str   = Field(..., description="Linked customer order ID.")
-    product_id         : str   = Field(..., description="Finished good being produced.")
-    qty                : float = Field(..., description="Units scheduled in this WO.")
-    due_date           : date  = Field(..., description="WO due date.")
-    required_material_qty: float = Field(
-        ...,
-        description="Units of the disrupted material needed by this WO."
-    )
-    penalty_per_day    : float = Field(
-        ...,
-        description="Customer contractual penalty per late day (USD)."
-    )
-    days_at_risk       : int   = Field(
-        ...,
-        ge=0,
-        description="Days this WO overlaps with the shortage window."
-    )
-    otif_exposure      : float = Field(
-        ...,
-        ge=0.0,
-        description="Estimated OTIF penalty for this WO: days_at_risk * penalty_per_day (USD)."
-    )
+    """
+    A work order impacted by the material shortage.
+
+    Exposure model (pegged-order value):
+        exposure = co.qty * co.unit_price
+        IF planned_start IN [shortage_start, shortage_end] (inclusive end)
+        AND co_id IS NOT NULL (WO has a customer-order peg)
+        ELSE 0.0
+
+    WO-7781: co_id=None (no peg) -> otif_exposure=0.0
+    WO-7782: co_id='SO-55102', start in window -> 500 * $240 = $120,000
+    WO-7783: start after window -> otif_exposure=0.0
+    """
+    wo_id                : str            = Field(..., description="Work order ID.")
+    co_id                : Optional[str]  = Field(None, description="Linked customer order ID. None = no peg -> zero exposure.")
+    product_id           : str            = Field(..., description="Finished good being produced.")
+    qty                  : float          = Field(..., description="Units scheduled in this WO.")
+    planned_start        : date           = Field(..., description="WO planned start date.")
+    due_date             : date           = Field(..., description="WO due date.")
+    required_material_qty: float          = Field(..., description="Units of disrupted material needed.")
+    in_shortage_window   : bool           = Field(..., description="True if planned_start in [shortage_start, shortage_end] inclusive.")
+    otif_exposure        : float          = Field(..., ge=0.0, description="co.qty * co.unit_price if in_window and has_peg, else 0.0.")
 
 
 class MaterialShortage(BaseModel):

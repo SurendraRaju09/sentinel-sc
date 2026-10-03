@@ -107,19 +107,19 @@ shortage = MaterialShortage(
 
 wo_list = [
     AffectedWorkOrder(
-        wo_id="WO-7781", co_id="CO-2026-001", product_id="APEXM-100",
-        qty=50, due_date=date(2026,10,20), required_material_qty=100,
-        penalty_per_day=6000, days_at_risk=10, otif_exposure=60000,
+        wo_id="WO-7781", co_id=None, product_id="APEXM-100",
+        qty=50, planned_start=date(2026,10,5), due_date=date(2026,10,20),
+        required_material_qty=100, in_shortage_window=False, otif_exposure=0.0,
     ),
     AffectedWorkOrder(
-        wo_id="WO-7782", co_id="CO-2026-002", product_id="APEXM-100",
-        qty=40, due_date=date(2026,10,22), required_material_qty=80,
-        penalty_per_day=4000, days_at_risk=10, otif_exposure=40000,
+        wo_id="WO-7782", co_id="SO-55102", product_id="APEXM-100",
+        qty=50, planned_start=date(2026,10,14), due_date=date(2026,10,22),
+        required_material_qty=80, in_shortage_window=True, otif_exposure=120000.0,
     ),
     AffectedWorkOrder(
-        wo_id="WO-7783", co_id="CO-2026-003", product_id="APEXM-100",
-        qty=30, due_date=date(2026,10,25), required_material_qty=60,
-        penalty_per_day=2000, days_at_risk=10, otif_exposure=20000,
+        wo_id="WO-7783", co_id=None, product_id="APEXM-100",
+        qty=30, planned_start=date(2026,10,19), due_date=date(2026,10,25),
+        required_material_qty=60, in_shortage_window=False, otif_exposure=0.0,
     ),
 ]
 
@@ -130,7 +130,7 @@ def build_scenario_a():
         reference_date       = date(2026, 10, 3),
         shortage             = shortage,
         affected_work_orders = wo_list,
-        total_otif_exposure  = 120000.0,
+        total_otif_exposure  = 120000.0,   # only WO-7782: 500 * $240
         status               = ImpactStatus.SHORTAGE,
         recovery_required    = True,
     )
