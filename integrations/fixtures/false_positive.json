@@ -1,0 +1,27 @@
+{
+  "_fixture_meta": {
+    "source": "NewsAPI",
+    "scenario": "FALSE_POSITIVE",
+    "purpose": "Noise signal — Manila airport delays, unrelated to any active shipment",
+    "recorded_at": "2026-10-03T06:15:44Z",
+    "live_api": false,
+    "expected_result": "IGNORED — no active shipment correlation to Manila or MV Pacific Trader"
+  },
+  "status": "ok",
+  "totalResults": 1,
+  "articles": [
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Bloomberg News",
+      "title": "Typhoon causes minor cargo delays at Manila Ninoy Aquino, several air freight routes suspended",
+      "description": "Typhoon Carina brought heavy rainfall to the Manila metropolitan area on Friday, causing minor disruptions to cargo operations at Ninoy Aquino International Airport. Several air freight routes have been temporarily suspended. The cargo vessel MV Pacific Trader has diverted its route away from Manila Bay as a precautionary measure.",
+      "url": "https://www.bloomberg.com/news/manila-cargo-delays-2026-10-03",
+      "urlToImage": "https://assets.bloomberg.com/manila-airport.jpg",
+      "publishedAt": "2026-10-03T05:48:00Z",
+      "content": "MANILA, Oct 3 (Bloomberg) - Typhoon Carina caused moderate disruptions to air and sea cargo operations in the Manila area on Friday. Ninoy Aquino International Airport suspended operations on approximately 12 cargo flights from evening of October 2 through the early hours of October 3. Air freight operators including several regional logistics companies reported delays of 6 to 18 hours for cargo bound for Southeast Asian destinations. The container vessel MV Pacific Trader, which had been scheduled to call at Manila's South Harbor on October 4, diverted to Batangas Port as a precautionary measure. Port officials in Manila say normal operations are expected to resume by October 5. Analysts say the disruption, while notable, is unlikely to cause lasting supply-chain impact given the short duration. [+876 chars]"
+    }
+  ]
+}

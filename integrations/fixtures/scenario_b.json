@@ -1,0 +1,27 @@
+{
+  "_fixture_meta": {
+    "source": "NewsAPI",
+    "scenario": "B",
+    "purpose": "Same Port Klang disruption signal — but hero material is BEARING-6205 (buffer absorbs)",
+    "recorded_at": "2026-10-03T04:32:11Z",
+    "live_api": false,
+    "expected_result": "ABSORBED — TTS=20 >= TTR=15, no recovery required"
+  },
+  "status": "ok",
+  "totalResults": 1,
+  "articles": [
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Reuters Staff",
+      "title": "Typhoon conditions force vessel movement restrictions at Port Klang, Malaysia",
+      "description": "Typhoon conditions have forced Malaysian maritime authorities to temporarily restrict vessel movements at Port Klang. The MV Nordic Blue, carrying bearing components and mechanical parts, has been ordered to hold position. Revised ETAs expected to slip by 5 to 7 days.",
+      "url": "https://www.reuters.com/business/port-klang-restriction-2026-10-03",
+      "urlToImage": "https://static.reuters.com/port-klang.jpg",
+      "publishedAt": "2026-10-03T03:17:00Z",
+      "content": "KUALA LUMPUR, Oct 3 (Reuters) - Malaysian maritime authorities have imposed temporary restrictions on vessel movements at Port Klang following Typhoon Carina. The MV Nordic Blue, currently carrying a consignment of industrial bearings and mechanical sub-assemblies bound for European and Asian manufacturing plants, has been ordered to anchor approximately 8 nautical miles offshore. Shipping agents estimate a delay of 5 to 7 days before discharge operations can resume. Cargo owners have been advised to assess inventory buffers and adjust production schedules accordingly. [+980 chars]"
+    }
+  ]
+}

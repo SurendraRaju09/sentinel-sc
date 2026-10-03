@@ -1,0 +1,26 @@
+{
+  "_fixture_meta": {
+    "source": "NewsAPI",
+    "scenario": "A",
+    "purpose": "Primary disruption signal — Port Klang vessel restriction",
+    "recorded_at": "2026-10-03T04:32:11Z",
+    "live_api": false
+  },
+  "status": "ok",
+  "totalResults": 1,
+  "articles": [
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Reuters Staff",
+      "title": "Typhoon conditions force vessel movement restrictions at Port Klang, Malaysia",
+      "description": "Typhoon conditions have forced Malaysian maritime authorities to temporarily restrict vessel movements at Port Klang. Several container vessels are expected to experience significant delays of up to one week. The MV Sentinel Star, among others, has been ordered to hold position outside the port. Cargo discharge operations have been suspended until further notice.",
+      "url": "https://www.reuters.com/business/port-klang-restriction-2026-10-03",
+      "urlToImage": "https://static.reuters.com/port-klang.jpg",
+      "publishedAt": "2026-10-03T03:17:00Z",
+      "content": "KUALA LUMPUR, Oct 3 (Reuters) - Malaysian maritime authorities on Saturday imposed temporary restrictions on vessel movements at Port Klang following the approach of Typhoon Carina. The restrictions, effective immediately, are expected to remain in place for 5 to 7 days depending on weather conditions. The MV Sentinel Star, a container vessel carrying industrial components including motor parts and electrical assemblies, has been ordered to hold at anchorage approximately 12 nautical miles from the port entrance. Shipping agents estimate cargo discharge operations could resume no earlier than October 10. Port authorities have advised shippers to expect revised ETAs for all vessels currently anchored or en route to Port Klang. [+1240 chars]"
+    }
+  ]
+}
