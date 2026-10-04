@@ -142,7 +142,7 @@ def heuristic_extract(text: str) -> Dict[str, Any]:
 
 def llm_extract(title: str, snippet: str) -> Optional[Dict[str, Any]]:
     """
-    Extracts structured disruption metadata using Gemini (gemini-3.8-flash) or OpenAI.
+    Extracts structured disruption metadata using Gemini or OpenAI.
     Falls back gracefully to deterministic heuristic if unavailable.
     """
     gemini_key = os.getenv("GEMINI_API_KEY", "").strip()

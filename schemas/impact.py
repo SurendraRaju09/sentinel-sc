@@ -25,7 +25,7 @@ from datetime import date
 from enum import Enum
 from typing import List, Optional
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -219,5 +219,4 @@ class ImpactAssessment(BaseModel):
             )
         return self
 
-    class Config:
-        use_enum_values = False
+    model_config = ConfigDict(use_enum_values=False)

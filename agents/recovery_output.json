@@ -351,9 +351,9 @@
     "OPT-A"
   ],
   "selected_option_id": null,
-  "approval_decision": null,
-  "decided_by": null,
-  "decided_at": null,
-  "rejection_reason": null,
+  "approval_decision": "REJECTED",
+  "decided_by": "VP Supply Chain Operations",
+  "decided_at": "2026-10-04T05:57:37.956616Z",
+  "rejection_reason": "Rejected via control tower.",
   "audit_summary": "Material shortage detected for Stator Coil 440V (Primary) (STCOIL-440V) with TTS=5d and TTR=15d, creating a 10-day shortage window (2026-10-08 to 2026-10-18). OTIF customer order exposure is $120,000 (WO-7782 pegged to SO-55102). Four candidate recovery options were evaluated across C1-C8 rules: 3 options were vetoed (OPT-B: C1 lead time; OPT-C: C3 PPAP & C6 revision; OPT-D: C4 frozen window). Option OPT-A (EuroCoils GmbH spot buy via air) passed all quality and feasibility constraints at a cost of $30,100, triggering C5 VP budget authorization. Net financial benefit: $89,900."
 }

@@ -16,7 +16,7 @@ import json
 import logging
 import sqlite3
 import uuid
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -86,7 +86,7 @@ def health():
     return {
         "status": "healthy",
         "system": "Sentinel-SC",
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "database": DB_PATH.exists(),
         "checkpointer": CHECKPOINT_DB.exists()
     }

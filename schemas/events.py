@@ -24,7 +24,7 @@ from datetime import date, datetime
 from enum import Enum
 from typing import Optional
 
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -166,5 +166,4 @@ class DisruptionEvent(BaseModel):
             )
         return self
 
-    class Config:
-        use_enum_values = False   # keep enum instances, not raw strings
+    model_config = ConfigDict(use_enum_values=False)  # keep enum instances, not raw strings
